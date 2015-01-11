@@ -1,0 +1,69 @@
+*{margin:0;padding:0;-webkit-user-select:none;-o-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+html,body{height: 100%}
+body{background:black;}
+#divHead{box-shadow: 0 0 100px #6700FF;padding-bottom:10px;min-height: 153px;position: relative;}
+#divHead>div{width: 375px;position: absolute;text-shadow:0 0 25px yellow;cursor: pointer;}
+#divHead>div:active{text-shadow:0 0 15px yellow;}
+#divHead>ul{
+	position: absolute;
+	left: 430px;
+	bottom: 0;
+	color:white;
+	font-size: 20px;
+	
+}
+#divHead>ul li{
+	float: left;
+	margin: 10px;
+	list-style-type: none;
+	cursor: pointer;
+
+}
+#divHead>ul li:hover{
+	text-shadow:0 0 15px white;
+	color: green;	
+}
+#divHead>ul li:active{
+	color: red;		
+}
+
+#divBody{height: auto;position: relative;}
+#divBody >div:first-child{width: 375px;height: 100%;box-shadow: 0 0 100px #6700FF;position: absolute;color:gold;line-height: 200px;text-indent: 50px;font-size: 14px;overflow: hidden;}
+#divBody >div:first-child span{font-size: 30px}
+#divBody >div:first-child label{line-height: 10px;color: #ccc;margin-top: 30px;transition:0.2s;font-size: 20px;position: relative;top:-70px;}
+#divBody >div:first-child ul{position: relative;top:-70px;text-indent: 70px}
+#divBody >div:first-child ul li{line-height: 10px;cursor: pointer;color: green;margin-top: 30px;transition:0.2s;font-size: 20px}
+#divBody >div:first-child ul li:hover{text-indent: 120px;font-weight: bold;color: white;text-shadow:0 0 20px white;}
+#divBody >div:first-child ul li:active{color: #00FFF0;}
+#divBody >div:nth-child(2){
+	position: absolute;
+	left: 375px;
+	padding:50px;
+		
+}
+.playIframe{
+	background: -webkit-radial-gradient(circle,hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+	background: radial-gradient(hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+	width: 100%;height: 100%;
+	border-radius: 10px;
+	opacity: 0.7;
+	filter:opacity=70;
+	text-align: center;
+	line-height: 400px;
+	font-size:100px;
+	color:green;
+	text-shadow:0 0 20px white;
+	transition:0.2s;	
+}
+
+.playIframe iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+.playIframe_begin{
+	opacity: 1;
+	filter:opacity=100;
+	box-shadow: 0 0 100px white;
+	background: white
+}

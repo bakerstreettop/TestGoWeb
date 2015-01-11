@@ -1,0 +1,136 @@
+*{overflow: hidden;padding:0;margin:0;cursor: url("../imgs/cursor/leaf.ico"),auto;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;-user-select:none;}*:hover{cursor: url("../imgs/cursor/leaf.ico"),auto;}*:active{cursor: url("../imgs/cursor/oleaf.ico"),auto;}
+body{background:url(../imgs/background/street.jpg) no-repeat black right bottom fixed;}
+#welcome{background: url(../imgs/background/welcome.png) no-repeat;width: 350px;height: 275px;}
+#divSHBack{opacity: 0.4;filter:alpha(opacity=40);position: fixed;left:0;bottom:0;width: 250px;height: 346px;background: url(../imgs/background/sherlock.png) no-repeat;background-size:  250px 346px;background-position: left bottom}
+/*#divSSHBack{animation:changeOpacity 3s linear infinite;-webkit-animation:changeOpacity 3s linear infinite;-moz-animation:changeOpacity 3s linear infinite;-o-animation:changeOpacity 3s linear infinite;opacity: 0.7;filter:alpha(opacity=70);position: fixed;left:520px;top:120px;width: 101px;height: 131px;background: url(../imgs/background/ssh.jpg) no-repeat;}*/
+#divStar{opacity: 0.8;filter:alpha(opacity=80);position: fixed;left:380px;top:160px;width: 100px;height: 100px;background: url(../imgs/background/star.gif) no-repeat;background-size: 100px 100px;}
+@keyframes changeOpacity{
+0{opacity: 0.7;filter:alpha(opacity=70);}
+20%{opacity: 1;filter:alpha(opacity=100);}
+100%{opacity: 0.6;filter:alpha(opacity=60);}
+}
+@-webkit-keyframes changeOpacity{
+0{opacity: 0.7;filter:alpha(opacity=70);}
+20%{opacity: 1;filter:alpha(opacity=100);}
+100%{opacity: 0.6;filter:alpha(opacity=60);}
+}
+@-moz-keyframes changeOpacity{
+0{opacity: 0.7;filter:alpha(opacity=70);}
+20%{opacity: 1;filter:alpha(opacity=100);}
+100%{opacity: 0.6;filter:alpha(opacity=60);}
+}
+@-o-keyframes changeOpacity{
+0{opacity: 0.7;filter:alpha(opacity=70);}
+20%{opacity: 1;filter:alpha(opacity=100);}
+100%{opacity: 0.6;filter:alpha(opacity=60);}
+}
+
+.setEffect{position: absolute;right:138px;top:0;}
+/*.setEffect .setLoginPic{height:120px;width:220px;position:absolute;top:0;right:0}
+.setEffect .setLoginPic img {float: right;width: 71px;height:71px;margin: 10px 10px 0 0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;box-shadow: 0 0 13px white;-webkit-box-shadow: 0 0 13px white;-moz-box-shadow: 0 0 13px white;}
+.setEffect .setLoginPic div{padding: 10px 0 0 0;font-size: 16px;word-break:break-all;width: 114px;height: auto;color:#CB00D6;text-shadow:0 0 4px #6AD3FF;float: right;margin:5px 10px 0 0;}
+.setEffect .setLoginPic div input[type="button"]{text-shadow:0 0 40px gold;letter-spacing:2px;background: transparent;font-weight: bold;color: green;width: 55px;height: 25px;margin-top:10px;font-size: 16px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.setEffect .setLoginPic div input[type="button"]:active{font-size: 14px;text-shadow:0 0 1px green;}
+.setEffect .setLoginPic .setLoginFont{width:100%;text-align:right;color:red;*margin-top:-5px;}*/
+.setEffect ul {	position: relative;list-style-type: none;}
+.setEffect ul li {	
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 15px 0 10px 45px;	
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+.setEffect ul li span {
+	background:-webkit-radial-gradient(40% 45%, 50px 50px , rgba(0,0,0,0),rgba(50,50,50,1));
+	background:-moz-radial-gradient(center center, 250px 250px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:-ms-radial-gradient(center center, 250px 250px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:-o-radial-gradient(center center, 250px 250px ,rgba(50,50,50,1), rgba(0,0,0,0));
+	background:radial-gradient(center center, 250px 250px ,rgba(50,50,50,1), rgba(0,0,0,0));	
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	transform:rotate(-10deg);
+	display: block;
+	text-decoration:none;	
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 0 100px 100px 100px;
+	text-align:center;	
+	font-size: 28px;
+	color: #717986;
+	text-shadow: 0px 0px 100px rgba(0,0,0,0);
+/*	transition: all 0s ease-in;*/
+	font-weight: bold;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.setEffect ul li span:hover {
+	background:transparent;
+	color:#C4D1D6;		
+	line-height: 100px;
+	text-shadow: 0px 0px 6px white;
+	transition: all 0.1s ease-out;	
+}
+.setEffect ul li span:active{	
+	font-size: 30px;
+	color: white;
+}
+
+/*宽度响应*/
+@media(max-width: 1150px){body{background-size:50%} .setEffect{left:480px;}}
+@media(max-width: 915px){.setEffect{right: 38px}}
+@media(max-width: 810px){.setEffect ul li{width: 80px;height: 80px} 
+	.setEffect ul li span{width: 80px;height: 80px;line-height: 80px;font-size: 22px}
+	.setEffect ul li span:hover{line-height: 80px}
+	#divSHBack{width: 35%;background-size: 80%}
+}
+@media(max-width: 665px){
+	#welcome{display:none}
+	#waterHolder{display: none;}
+	.setEffect{left:auto;right: auto;}
+}
+@media(max-width: 530px){
+	.setEffect{width: 100%}
+	.setEffect ul li {margin: 3%}
+}
+@media(max-width: 426px){
+	.setEffect ul li{clear: both;}
+}
+
+/*高度响应*/
+@media(max-height: 774px){
+	body{background-size:50% 50% }	
+}
+@media(max-height: 641px){
+	#divSHBack{height: 50%;background-size: 75%}
+}
+@media(max-height: 548px){
+	#divSHBack{display: none;}
+}
+@media(max-height:275px){
+	#waterHolder{display: none;}#welcome{display: none;}
+}
+@media(max-height: 220px){
+	body {background:black;}
+}
+@media(max-height: 130px){
+	.setEffect{display: none}
+}
+
+/*
+@media screen and (min-width: 1086px) and (max-width: 1360px){}
+@media(max-width: 820px){body {background:black;}}
+@media(max-height: 510px){body {background:black;}}
+@media(max-width: 350px){#waterHolder{display: none;}#welcome{display: none;}.setEffect{position: absolute;left: 25px;}}
+/*@media(max-width: 350px) and (max-height: 510px){.setEffect{position: absolute;left: 275px;}}*/
+/*@media(max-height:618px){#divSHBack{display: none;}}
+/*@media(max-height:715px){#divStar{top:275px;}}*/
+/*@media(max-height:275px){#waterHolder{display: none;}#welcome{display: none;}}
+@media(max-height:140px){.setEffect{display: none;}}
+/*@media(max-width: 1240px){#divSSHBack{display: none;}}
+@media(max-height:320px){#divSSHBack{display: none;}}*/

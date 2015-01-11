@@ -1,0 +1,82 @@
+/* 课程：扁平风格手风琴式菜单效果 */
+*{padding:0;margin: 0;overflow: hidden;border:0;}
+html{height: 100%}
+body {
+   
+    font-family: 'microsoft yahei',Arial,sans-serif;   
+    height: 100%;
+    background:black;
+    background-size:15% 85%;
+    -webkit-box-shadow:inset 0 0 10px white;
+    -moz-box-shadow:inset 0 0 10px white;
+    box-shadow:inset 0 0 10px white;
+    padding:10px;
+}
+
+h1 { 
+	border-bottom: 1px solid #555555; 
+	color:#fff;  padding-bottom: 20px; 
+	font-size: 28px;
+	font-weight:normal;
+	margin-bottom: 30px;
+}
+
+dd {
+    margin: 0;
+    
+    font-size: 16px;
+    background: #fbfbfb;
+    
+    text-align: left;
+   
+}
+dd div{
+    padding: 10px 40px;
+     
+    text-shadow:0 0 10px white;
+    transition:0.1s;
+}
+
+dd div:hover{
+    cursor:pointer;
+    background: #A59B27;
+    
+}
+dd div:active{    
+ padding-left: 55px;
+ color: green;
+}
+
+dt {
+    cursor: pointer;
+    font-size : 18px;
+    line-height: 23px;
+    background: #EB852A;
+
+    border-top: 1px solid #EFEFEF;
+	box-shadow: 0 1px 0 #FFFFFF;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    padding: 10px 14px;
+}
+dt div{
+    position: absolute;
+    margin-top: -25px;
+    right: 25px;
+    transition:0.8s;
+}
+
+dt:first-child { border-top: none; }
+dt:nth-last-child(2) { border-bottom: none; }
+
+.hidden { display: none;}
+
+footer{
+	margin: 50px;
+}
+
+footer p{
+	color: #dd4814;
+	text-decoration: none;
+}

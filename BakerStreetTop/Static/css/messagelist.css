@@ -1,0 +1,34 @@
+*{overflow: hidden;padding:0;margin:0;cursor: url("../images/cursor/leaf.ico"),auto;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;-user-select:none;}*:hover{cursor: url("../images/cursor/leaf.ico"),auto;}*:active{cursor: url("../images/cursor/oleaf.ico"),auto;}
+*{color:white;overflow: hidden;}
+			
+ul{padding: 0;width: 100%;height: 440px;}
+ul li{
+	list-style-type:none;
+	word-break:break-all;
+	padding:5px 10px;
+	letter-spacing:5px;
+	font-size:18px;
+	text-shadow:0 0 5px white;
+	color:#00FFD1;
+	background:transparent;
+	box-shadow:inset 0 0 10px white;
+	-moz-box-shadow:inset 0 0 10px white;
+	-webkit-box-shadow:inset 0 0 10px white;
+	height:100px;
+	overflow-y: auto;
+}
+ul li div{
+	padding: 5px 0;
+	color: orange;
+}
+ul li div span{
+	color: green;
+	font-weight: bold;
+	text-shadow:0 0 15px gold;
+	font-size: 20px;	
+}
+#divPage{padding:25px;position: relative;height: 50px;font-size: 18px}
+#divPage span{position: absolute;top:58px;text-align: center;line-height: 25px;font-size: 12px;float:left;width:25px;height:25px;border:3px transparent solid;box-shadow: 0 0 1px white,inset 0 0 1px white;-webkit-box-shadow: 0 0 1px white,inset 0 0 1px white;-moz-box-shadow: 0 0 1px white,inset 0 0 1px white;}
+#divPage span:hover{-webkit-box-shadow: 0 0 10px white,inset 0 0 1px white;-moz-box-shadow: 0 0 10px white,inset 0 0 1px white;box-shadow: 0 0 10px white,inset 0 0 1px white;}
+#divPage span:active{-webkit-box-shadow: 0 0 10px white,inset 0 0 10px white;-moz-box-shadow: 0 0 10px white,inset 0 0 10px white;box-shadow: 0 0 10px white,inset 0 0 10px white;}
+.current{-webkit-box-shadow: 0 0 10px white,inset 0 0 1px white !important;-moz-box-shadow: 0 0 10px white,inset 0 0 1px white !important;box-shadow: 0 0 10px white,inset 0 0 1px white !important;}
